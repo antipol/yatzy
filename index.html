@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Yatzy!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/98d2dd5178.js"></script>
+  </head>
+  <body>
+
+    <nav>
+      <button id="navMenu" type="button" name="button">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul>
+        <li>New Game</li>
+        <li>Rules</li>
+        <li>Scoreboard</li>
+      </ul>
+    </nav>
+    <!-- end nav bar  -->
+
+    <div class="intro">
+      <h1>Yatzy!</h1>
+      <section class="rules">
+        <button id="rulesButton" type="button" name="button">
+          <h3>Rules</h3>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div id="rulesText" class="rules-text">
+          <p>All the rules go here</p>
+        </div>
+      </section>
+      <section class="num-of-players">
+        <h3>How many players?</h3>
+        <button id="playerInfoButton" type="button" name="button">?</button>
+        <div id="playersText" class="players-text">
+          <p>Choose how many players are going to play.</p>
+          <p>Maximum 10 players.</p>
+          <p>If you're playing against someone who is far away, choose 1 player and have them do the same. You will not be able to see each others score, but you can keep track of your own score.</p>
+        </div>
+        <div class="num-spinner">
+          <button id="subtractPlayer" type="button" name="button">
+            <i class="fas fa-minus"></i>
+          </button>
+          <input id="playerNum" type="number" name="playerNum" value="2" min="1" max="10">
+          <button id="addPlayer" type="button" name="button">
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+      </section>
+      <button id="nextButton" type="button" name="button">Next</button>
+    </div>
+    <!-- end intro div -->
+
+    <div class="players">
+      <h3>Enter the names of the players</h3>
+      <div class="player-container">
+        <div class="player-item">
+          <label for="player1">Player 1</label>
+          <input id="player1" type="text" name="" value="">
+        </div>
+        <div class="player-item">
+          <label for="player2">Player 2</label>
+          <input id="player2" type="text" name="" value="">
+        </div>
+        <div class="player-item">
+          <label for="player3">Player 3</label>
+          <input id="player3" type="text" name="" value="">
+        </div>
+        <div class="player-item">
+          <label for="player4">Player 4</label>
+          <input id="player4" type="text" name="" value="">
+        </div>
+        <div class="player-item">
+          <label for="player5">Player 5</label>
+          <input id="player5" type="text" name="" value="">
+        </div>
+        <div class="player-item">
+          <label for="player6">Player 6</label>
+          <input id="player6" type="text" name="" value="">
+        </div>
+        <div class="player-item">
+          <label for="player7">Player 7</label>
+          <input id="player7" type="text" name="" value="">
+        </div>
+        <div class="player-item">
+          <label for="player8">Player 8</label>
+          <input id="player8" type="text" name="" value="">
+        </div>
+        <div class="player-item">
+          <label for="player9">Player 9</label>
+          <input id="player9" type="text" name="" value="">
+        </div>
+        <div class="player-item">
+          <label for="player10">Player 10</label>
+          <input id="player10" type="text" name="" value="">
+        </div>
+      </div>
+      <button id="back" type="button" name="button">Back</button>
+      <button id="play" type="button" name="button">Play!</button>
+    </div>
+    <!-- end players info div -->
+
+    <div class="game">
+      <h3>Player</h3>
+      <section class="status">
+        <h5>Current score:</h5>
+        <p>0</p>
+        <h5>Rolls left:</h5>
+        <p id="rollsLeft">3</p>
+      </section>
+      <section class="dice">
+        <img src="images/dice-1.svg">
+        <img src="images/dice-2.svg">
+        <img src="images/dice-3.svg">
+        <img src="images/dice-4.svg">
+        <img src="images/dice-5.svg">
+      </section>
+      <section class="roll">
+        <button id="rollButton" type="button" name="button">Roll</button>
+      </section>
+      <section class="options">
+        <div class="collect">
+          <p>Collect</p>
+          <button type="button" name="button">
+            <img src="images/dice-1.svg">
+          </button>
+          <button type="button" name="button">
+            <img src="images/dice-2.svg">
+          </button>
+          <button type="button" name="button">
+            <img src="images/dice-3.svg">
+          </button>
+          <button type="button" name="button">
+            <img src="images/dice-4.svg">
+          </button>
+          <button type="button" name="button">
+            <img src="images/dice-5.svg">
+          </button>
+          <button type="button" name="button">
+            <img src="images/dice-6.svg">
+          </button>
+        </section>
+        <section class="pairs">
+          <button type="button" name="button">One pair</button>
+          <button type="button" name="button">Two pairs</button>
+        </div>
+        <div class="of-a-kind">
+          <button type="button" name="button">Three of a kind</button>
+          <button type="button" name="button">Four of a kind</button>
+        </div>
+        <div class="straights">
+          <button type="button" name="button">Low straight</button>
+          <button type="button" name="button">High straight</button>
+        </div>
+        <div class="house-chance">
+          <button type="button" name="button">Full house</button>
+          <button type="button" name="button">Chance</button>
+        </div>
+        <button id="yatzyButton" type="button" name="button">Yatzy!</button>
+      </section>
+      <section class="finish-round">
+        <h5>Score to be added:</h5>
+        <p id="potentialScore">0</p>
+        <button type="button" name="button">Add score and finish your round</button>
+      </section>
+    </div>
+    <!-- end game screen -->
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

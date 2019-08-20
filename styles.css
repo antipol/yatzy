@@ -1,0 +1,41 @@
+body {
+  background-color: pink;
+}
+
+i {
+  pointer-events: none;
+}
+
+nav ul {
+  display: none;
+}
+
+.rules-text {
+  display: none;
+}
+
+.players-text {
+  display: none;
+}
+
+.player-item {
+  display: none;
+}
+
+.shown {
+  display: block;
+}
+
+.keep {
+  filter: invert(1);
+}
+
+img {
+  width: 50px;
+}
+
+button img {
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
