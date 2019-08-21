@@ -30,6 +30,10 @@ nav ul {
   filter: invert(1);
 }
 
+.final-pick {
+  border: solid 3px black;
+}
+
 img {
   width: 50px;
 }
